@@ -1,1 +1,7 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+    --color-customLime: #CBF281;
+    --color-customIndigo: #4731D3;
+    --color-customPurple: #3730A3;
+  }
