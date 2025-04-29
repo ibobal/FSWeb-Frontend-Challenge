@@ -1,6 +1,6 @@
 {
-  "homepage": "https://ibobal.github.io/FSWeb-Frontend-Challenge",
-  "name": "fweb-frontend-challenge",
+  "homepage": ".",
+  "name": "fsweb-frontend-challenge",
   "private": true,
   "version": "0.0.0",
   "type": "module",
