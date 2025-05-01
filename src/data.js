@@ -4,46 +4,53 @@ export const data = {
       title: "I am a Frontend Developer...",
       subtitle:
         "who likes to craft solid and scalable products with great user experiences.",
-      image: "",
+      image:
+        "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
     },
     skillsSection: {
       title: "Skills",
       skills: [
         {
           name: "JAVASCRIPT",
-          icon: "javaScript",
+          icon: "https://img.icons8.com/color/96/000000/javascript--v1.png",
         },
         {
           name: "NODE",
-          icon: "Node.js",
+          icon: "https://img.icons8.com/color/96/000000/nodejs.png",
         },
         {
           name: "REACT",
-          icon: "react",
+          icon: "https://img.icons8.com/color/96/000000/react-native.png",
         },
         {
           name: "VS CODE",
-          icon: "react",
+          icon: "https://img.icons8.com/?size=96&id=i19Ns28h30P4&format=png&color=000000",
         },
         {
           name: "REDUX",
-          icon: "react",
+          icon: "https://img.icons8.com/color/96/000000/redux.png",
         },
         {
-          name: "Figma",
-          icon: "figma",
+          name: "FIGMA",
+          icon: "https://img.icons8.com/color/96/000000/figma.png",
         },
       ],
     },
     profileSection: {
       title: "Profile",
-      image: "",
+      image:
+        "https://www.codiga.io/_next/static/media/background-default.1657f1f1.jpg",
       infoSection: {
         title: "Basic Information",
-        birthDate: "Date Of Birth",
-        cityOfResidence: "City Of Residence",
-        education: "Email",
-        role: "Preferred Role",
+        informations: [
+          { title: "Date Of Birth", value: "30.08.1997" },
+          { title: "City Of Residence", value: "Ankara" },
+          {
+            title: "Education",
+            value: "Gazi University, Business Administration, 2020",
+          },
+          { title: "Preferred Role", value: "Frontend UI" },
+        ],
       },
       aboutMeSection: {
         title: "About Me",
@@ -81,47 +88,54 @@ export const data = {
     heroSection: {
       title: "Ben bir Frontend Geliştiricisiyim...",
       subtitle:
-        "sağlam ve ölçeklenebilir ürünler geliştirip, harika kullanıcı deneyimleri sunmayı seviyorum.",
-      image: "",
+        "...sağlam ve ölçeklenebilir ürünler geliştirip, harika kullanıcı deneyimleri sunmayı seviyorum.",
+      image:
+        "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
     },
     skillsSection: {
       title: "Yetenekler",
       skills: [
         {
           name: "JAVASCRIPT",
-          icon: "javaScript",
+          icon: "https://img.icons8.com/color/96/000000/javascript--v1.png",
         },
         {
           name: "NODE",
-          icon: "Node.js",
+          icon: "https://img.icons8.com/color/96/000000/nodejs.png",
         },
         {
           name: "REACT",
-          icon: "react",
+          icon: "https://img.icons8.com/color/96/000000/react-native.png",
         },
         {
           name: "VS CODE",
-          icon: "react",
+          icon: "https://img.icons8.com/?size=96&id=i19Ns28h30P4&format=png&color=000000",
         },
         {
           name: "REDUX",
-          icon: "react",
+          icon: "https://img.icons8.com/color/96/000000/redux.png",
         },
         {
-          name: "Figma",
-          icon: "figma",
+          name: "FIGMA",
+          icon: "https://img.icons8.com/color/96/000000/figma.png",
         },
       ],
     },
     profileSection: {
       title: "Profil",
-      image: "",
+      image:
+        "https://www.codiga.io/_next/static/media/background-default.1657f1f1.jpg",
       infoSection: {
         title: "Temel Bilgiler",
-        birthDate: "Doğum Tarihi",
-        cityOfResidence: "İkamet Şehri",
-        education: "E-posta",
-        role: "Tercih Edilen Rol",
+        informations: [
+          { title: "Doğum Tarihi", value: "30.08.1997" },
+          { title: "İkamet Şehri", value: "Ankara" },
+          {
+            title: "Eğitim",
+            value: "Gazi Üniversitesi, İşletme, 2020",
+          },
+          { title: "Tercih Edilen Rol", value: "Frontend UI" },
+        ],
       },
       aboutMeSection: {
         title: "Hakkımda",
