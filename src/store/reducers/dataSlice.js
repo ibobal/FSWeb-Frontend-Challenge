@@ -10,7 +10,6 @@ export const fetchContentData = createAsyncThunk(
       data[language],
       { headers: { "x-api-key": "reqres-free-v1" } }
     );
-    console.log(response.data);
     return response.data;
   }
 );
