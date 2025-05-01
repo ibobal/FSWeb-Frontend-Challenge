@@ -1,10 +1,31 @@
 import { useSelector, useDispatch } from "react-redux";
 import { setTheme, setLanguage } from "../store/reducers/settingsSlice";
+import { useEffect } from "react";
+import { fetchContentData } from "../store/reducers/dataSlice";
 
 export default function Header() {
   const theme = useSelector((state) => state.settings.theme);
   const language = useSelector((state) => state.settings.language);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchContentData(language));
+  }, [language, dispatch]);
+
+  useEffect(() => {
+    const html = document.querySelector("html");
+    if (theme === "dark") {
+      html.setAttribute("data-theme", "dark");
+    } else {
+      html.setAttribute("data-theme", "light");
+    }
+    const toggle = document.querySelector(".theme-controller");
+    if (theme === "dark") {
+      toggle.checked = true;
+    } else {
+      toggle.checked = false;
+    }
+  }, [theme]);
 
   return (
     <header className="absolute top-0 left-0 w-full flex items-center justify-between bg-transparent z-10 px-20 md:px-40 lg:px-80 py-8">
