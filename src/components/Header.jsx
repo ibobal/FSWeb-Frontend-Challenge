@@ -22,7 +22,7 @@ export default function Header() {
             className="toggle theme-controller"
             onClick={() => dispatch(setTheme())}
           />
-          <span className="label-text">
+          <span className="label-text text-customPurple font-bold">
             {theme === "dark" ? "DARK MODE" : "LIGHT MODE"}
           </span>
         </label>
