@@ -1,8 +1,8 @@
 @import "tailwindcss";
 @plugin "daisyui";
-@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 @theme {
-    --color-customLime: #CBF281;
-    --color-customIndigo: #4731D3;
-    --color-customPurple: #3730A3;
-  }
+  --color-customLime: #cbf281;
+  --color-customIndigo: #4731d3;
+  --color-customPurple: #3730a3;
+}
