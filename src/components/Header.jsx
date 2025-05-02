@@ -28,7 +28,7 @@ export default function Header() {
   }, [theme]);
 
   return (
-    <header className="absolute top-0 left-0 w-full flex items-center justify-between bg-transparent z-10 px-6 md:px-20 lg:px-40 py-4 md:py-8">
+    <header className="absolute top-0 left-0 w-full flex items-center justify-between bg-transparent z-10 px-6 md:px-20 lg:px-80 py-4 md:py-8">
       <div className="text-xl sm:text-2xl md:text-3xl text-customLime font-bold">
         ibobal
       </div>
@@ -42,10 +42,10 @@ export default function Header() {
         <label className="flex cursor-pointer items-center gap-2">
           <input
             type="checkbox"
-            className="toggle theme-controller"
+            className="toggle theme-controller bg-amber-300 [--tglbg:var(--color-sky-500)] checked:border-blue-800 checked:bg-customIndigo checked:[--tglbg:var(--color-blue-900)]"
             onClick={() => dispatch(setTheme())}
           />
-          <span className="label-text text-sm sm:text-base md:text-lg text-white md:text-customPurple font-bold lg:pr-3">
+          <span className="label-text text-sm sm:text-base md:text-lg text-white md:text-customPurple md:dark:text-white font-bold lg:pr-5">
             {theme === "dark" ? "DARK MODE" : "LIGHT MODE"}
           </span>
         </label>
