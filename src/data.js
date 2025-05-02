@@ -3,43 +3,43 @@ export const data = {
     heroSection: {
       title: "I am a Frontend Developer...",
       subtitle:
-        "who likes to craft solid and scalable products with great user experiences.",
+        "who likes to craft solid and scalable frontend products with great user experiences.",
       image:
-        "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+        "https://picsum.photos/500",
     },
     skillsSection: {
       title: "Skills",
       skills: [
         {
           name: "JAVASCRIPT",
-          icon: "https://img.icons8.com/color/96/000000/javascript--v1.png",
+          icon: "https://img.icons8.com/color/128/000000/javascript--v1.png",
         },
         {
           name: "NODE",
-          icon: "https://img.icons8.com/color/96/000000/nodejs.png",
+          icon: "https://img.icons8.com/color/128/000000/nodejs.png",
         },
         {
           name: "REACT",
-          icon: "https://img.icons8.com/color/96/000000/react-native.png",
+          icon: "https://img.icons8.com/color/128/000000/react-native.png",
         },
         {
           name: "VS CODE",
-          icon: "https://img.icons8.com/?size=96&id=i19Ns28h30P4&format=png&color=000000",
+          icon: "https://img.icons8.com/?size=128&id=i19Ns28h30P4&format=png&color=000000",
         },
         {
           name: "REDUX",
-          icon: "https://img.icons8.com/color/96/000000/redux.png",
+          icon: "https://img.icons8.com/color/128/000000/redux.png",
         },
         {
           name: "FIGMA",
-          icon: "https://img.icons8.com/color/96/000000/figma.png",
+          icon: "https://img.icons8.com/color/128/000000/figma.png",
         },
       ],
     },
     profileSection: {
       title: "Profile",
       image:
-        "https://www.codiga.io/_next/static/media/background-default.1657f1f1.jpg",
+        "https://picsum.photos/600",
       infoSection: {
         title: "Basic Information",
         informations: [
@@ -64,14 +64,14 @@ export const data = {
       projects: [
         {
           name: "Workintech",
-          image: "",
+          image: "https://picsum.photos/800/?1",
           desc: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
           skills: ["react", "redux", "vercel"],
           link: "View Site",
         },
         {
           name: "Journey",
-          image: "",
+          image: "https://picsum.photos/800/?2",
           desc: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
           skills: ["react", "redux", "vercel"],
           link: "View Site",
@@ -88,43 +88,43 @@ export const data = {
     heroSection: {
       title: "Ben bir Frontend Geliştiricisiyim...",
       subtitle:
-        "...sağlam ve ölçeklenebilir ürünler geliştirip, harika kullanıcı deneyimleri sunmayı seviyorum.",
+        "...sağlam ve ölçeklenebilir frontend ürünler geliştirip, harika kullanıcı deneyimleri sunmayı seviyorum.",
       image:
-        "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+        "https://picsum.photos/500",
     },
     skillsSection: {
       title: "Yetenekler",
       skills: [
         {
           name: "JAVASCRIPT",
-          icon: "https://img.icons8.com/color/96/000000/javascript--v1.png",
+          icon: "https://img.icons8.com/color/128/000000/javascript--v1.png",
         },
         {
           name: "NODE",
-          icon: "https://img.icons8.com/color/96/000000/nodejs.png",
+          icon: "https://img.icons8.com/color/128/000000/nodejs.png",
         },
         {
           name: "REACT",
-          icon: "https://img.icons8.com/color/96/000000/react-native.png",
+          icon: "https://img.icons8.com/color/128/000000/react-native.png",
         },
         {
           name: "VS CODE",
-          icon: "https://img.icons8.com/?size=96&id=i19Ns28h30P4&format=png&color=000000",
+          icon: "https://img.icons8.com/?size=128&id=i19Ns28h30P4&format=png&color=000000",
         },
         {
           name: "REDUX",
-          icon: "https://img.icons8.com/color/96/000000/redux.png",
+          icon: "https://img.icons8.com/color/128/000000/redux.png",
         },
         {
           name: "FIGMA",
-          icon: "https://img.icons8.com/color/96/000000/figma.png",
+          icon: "https://img.icons8.com/color/128/000000/figma.png",
         },
       ],
     },
     profileSection: {
       title: "Profil",
       image:
-        "https://www.codiga.io/_next/static/media/background-default.1657f1f1.jpg",
+        "https://picsum.photos/600",
       infoSection: {
         title: "Temel Bilgiler",
         informations: [
@@ -149,14 +149,14 @@ export const data = {
       projects: [
         {
           name: "Workintech",
-          image: "",
+          image: "https://picsum.photos/800/?1",
           desc: "Kullanıcıların hangi çerezleri kabul edip etmeyeceklerini seçmelerine olanak tanıyan basit, özelleştirilebilir, minimal kurulumlu bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile geliştirildi. NPM paketi olarak mevcuttur ve Git deposu sayesinde tema ve kod üzerinde her türlü özelleştirme yapılabilir.",
           skills: ["react", "redux", "vercel"],
           link: "Siteyi Görüntüle",
         },
         {
           name: "Journey",
-          image: "",
+          image: "https://picsum.photos/800/?2",
           desc: "Kullanıcıların hangi çerezleri kabul edip etmeyeceklerini seçmelerine olanak tanıyan basit, özelleştirilebilir, minimal kurulumlu bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile geliştirildi. NPM paketi olarak mevcuttur ve Git deposu sayesinde tema ve kod üzerinde her türlü özelleştirme yapılabilir.",
           skills: ["react", "redux", "vercel"],
           link: "Siteyi Görüntüle",
@@ -165,7 +165,7 @@ export const data = {
     },
     footerSection: {
       title: "Bana bir mesaj gönder",
-      desc: "Bir sorunuz, teklifiniz mi var ya da sadece merhaba mı demek istiyorsunuz? Devam edin.",
+      desc: "Bir sorunuz, teklifiniz mi var ya da sadece merhaba mı demek istiyorsunuz?",
       email: "ibrahimballi454@gmail.com",
     },
   },
