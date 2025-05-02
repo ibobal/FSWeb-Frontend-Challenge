@@ -5,7 +5,7 @@ export default function Profile() {
   const { title, image, infoSection, aboutMeSection } = data.profileSection;
 
   return (
-    <div className="bg-customIndigo dark:bg-[#171043] text-white px-6 md:px-20 lg:px-40 py-16">
+    <div className="bg-customIndigo dark:bg-[#171043] text-white px-6 md:px-20 lg:px-80 py-16">
       <h1 className="text-3xl md:text-5xl text-customLime font-bold mb-8">
         {title}
       </h1>
