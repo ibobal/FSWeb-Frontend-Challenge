@@ -28,22 +28,24 @@ export default function Header() {
   }, [theme]);
 
   return (
-    <header className="absolute top-0 left-0 w-full flex items-center justify-between bg-transparent z-10 px-20 md:px-40 lg:px-80 py-8">
-      <div className="text-2xl text-customLime font-bold">ibobal</div>
-      <div className="flex items-center space-x-6">
+    <header className="absolute top-0 left-0 w-full flex items-center justify-between bg-transparent z-10 px-6 md:px-20 lg:px-40 py-4 md:py-8">
+      <div className="text-xl sm:text-2xl md:text-3xl text-customLime font-bold">
+        ibobal
+      </div>
+      <div className="flex items-center md:space-x-6">
         <button
-          className="text-sm text-customLime font-medium hover:bg-gray-400 p-2 rounded-full"
+          className="text-sm sm:text-base md:text-lg text-customLime font-medium hover:bg-gray-400 p-2 rounded-full transition-all duration-300"
           onClick={() => dispatch(setLanguage())}
         >
           {language === "en" ? "TÜRKÇE'YE GEÇ" : "SWITCH TO ENGLISH"}
         </button>
-        <label className="flex cursor-pointer gap-2">
+        <label className="flex cursor-pointer items-center gap-2">
           <input
             type="checkbox"
             className="toggle theme-controller"
             onClick={() => dispatch(setTheme())}
           />
-          <span className="label-text text-customPurple font-bold">
+          <span className="label-text text-sm sm:text-base md:text-lg text-white md:text-customPurple font-bold lg:pr-3">
             {theme === "dark" ? "DARK MODE" : "LIGHT MODE"}
           </span>
         </label>
