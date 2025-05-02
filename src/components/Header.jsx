@@ -34,10 +34,16 @@ export default function Header() {
       </div>
       <div className="flex items-center md:space-x-6">
         <button
-          className="text-sm sm:text-base md:text-lg text-customLime font-medium hover:bg-gray-400 p-2 rounded-full transition-all duration-300"
+          className="text-sm sm:text-base md:text-lg text-customLime font-medium hover:opacity-70 p-2 rounded-full transition-all duration-300 cursor-pointer"
           onClick={() => dispatch(setLanguage())}
         >
-          {language === "en" ? "TÜRKÇE'YE GEÇ" : "SWITCH TO ENGLISH"}
+          {language === "en" ? (
+            <p>
+              TÜRKÇE<span className="text-gray-300">'YE GEÇ</span>
+            </p>
+          ) : (
+            <p><span className="text-gray-300">SWITCH TO</span> ENGLISH</p>
+          )}
         </button>
         <label className="flex cursor-pointer items-center gap-2">
           <input
