@@ -5,7 +5,7 @@ export default function Projects() {
   const { title, projects } = data.projectsSection;
 
   return (
-    <div className="dark:bg-[#1A210B] px-6 md:px-20 lg:px-40 py-16 bg-customLime">
+    <div className="dark:bg-[#1A210B] px-6 md:px-20 lg:px-80 py-16 bg-customLime">
       <h1 className="text-3xl md:text-5xl text-customPurple dark:text-customLime font-bold mb-10">
         {title}
       </h1>
