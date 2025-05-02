@@ -5,7 +5,7 @@ export default function Skills() {
   const { title, skills } = data.skillsSection;
 
   return (
-    <div className="flex flex-col md:flex-row justify-between px-6 md:px-20 lg:px-40 py-16 dark:bg-[#252128]">
+    <div className="flex flex-col md:flex-row justify-between px-6 md:px-20 lg:px-80 py-16 dark:bg-[#252128]">
       <h1 className="text-3xl md:text-5xl text-customPurple dark:text-customLime font-bold mb-8 md:mb-0">
         {title}
       </h1>
