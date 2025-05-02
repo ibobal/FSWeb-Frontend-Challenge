@@ -6,7 +6,7 @@ export default function Hero() {
   const { title, subtitle, image } = data.heroSection;
 
   return (
-    <div className="flex flex-col md:flex-row justify-around md:justify-between min-h-screen bg-customIndigo dark:bg-[#171043] md:bg-[linear-gradient(to_right,_#4b37cf_0%,_#4b37cf_82%,_#c9f080_50%,_#c9f080_100%)] md:dark:bg-[linear-gradient(to_right,_#171043_0%,_#171043_82%,_#211F0B_50%,_#211F0B_100%)] px-6 md:px-20 lg:px-40 py-16">
+    <div className="flex flex-col md:flex-row justify-around md:justify-between min-h-screen bg-customIndigo dark:bg-[#171043] md:bg-[linear-gradient(to_right,_#4b37cf_0%,_#4b37cf_73%,_#c9f080_50%,_#c9f080_100%)] md:dark:bg-[linear-gradient(to_right,_#171043_0%,_#171043_73%,_#211F0B_50%,_#211F0B_100%)] px-6 md:px-20 lg:px-80 py-16">
       <div className="flex flex-col justify-center items-start text-left mb-8 md:mb-0">
         <h1 className="text-3xl md:text-5xl text-customLime font-bold">
           {title}
