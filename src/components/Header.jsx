@@ -2,10 +2,12 @@ import { useSelector, useDispatch } from "react-redux";
 import { setTheme, setLanguage } from "../store/reducers/settingsSlice";
 import { useEffect } from "react";
 import { fetchContentData } from "../store/reducers/dataSlice";
+import { toast } from "react-toastify";
 
 export default function Header() {
   const theme = useSelector((state) => state.settings.theme);
   const language = useSelector((state) => state.settings.language);
+  const { loading, error } = useSelector((state) => state.data);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -27,6 +29,28 @@ export default function Header() {
     }
   }, [theme]);
 
+  useEffect(() => {
+    if (loading === "loading") {
+      if (language === "en") {
+        toast.info("Loading content...", { autoClose: 1000 });
+      } else {
+        toast.info("İçerik yükleniyor...", { autoClose: 1000 });
+      }
+    } else if (loading === "idle" && !error) {
+      if (language === "en") {
+        toast.success("Content loaded successfully!", { autoClose: 2000 });
+      } else {
+        toast.success("İçerik başarıyla yüklendi!", { autoClose: 2000 });
+      }
+    } else if (error) {
+      if (language === "en") {
+        toast.error(`Error: ${error}`, { autoClose: 3000 });
+      } else {
+        toast.error(`Hata: ${error}`, { autoClose: 3000 });
+      }
+    }
+  }, [loading, error]);
+
   return (
     <header className="absolute top-0 left-0 w-full flex items-center justify-between bg-transparent z-10 px-6 md:px-20 lg:px-80 py-4 md:py-8">
       <div className="text-xl sm:text-2xl md:text-3xl text-customLime font-bold">
@@ -42,7 +66,9 @@ export default function Header() {
               TÜRKÇE<span className="text-gray-300">'YE GEÇ</span>
             </p>
           ) : (
-            <p><span className="text-gray-300">SWITCH TO</span> ENGLISH</p>
+            <p>
+              <span className="text-gray-300">SWITCH TO</span> ENGLISH
+            </p>
           )}
         </button>
         <label className="flex cursor-pointer items-center gap-2">
