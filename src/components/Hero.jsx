@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 export default function Hero() {
-  const { data, loading, error } = useSelector((state) => state.data);
+  const { data, loading } = useSelector((state) => state.data);
 
   if (loading === "loading") {
     return (
