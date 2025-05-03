@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 
 export default function Skills() {
-  const { data, loading, error } = useSelector((state) => state.data);
+  const { data } = useSelector((state) => state.data);
   const { title, skills } = data.skillsSection;
 
   return (
