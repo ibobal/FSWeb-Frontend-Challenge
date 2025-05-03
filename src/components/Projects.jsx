@@ -39,7 +39,7 @@ export default function Projects() {
               </div>
               <div className="card-actions flex flex-col md:flex-row gap-4 mt-4">
                 <a className="text-customPurple dark:text-customLime text-sm md:text-lg font-semibold underline">
-                  View Site
+                  {title === "Projects" ? "View Site" : "Siteyi Görüntüle"}
                 </a>
                 <a className="text-customPurple dark:text-customLime text-sm md:text-lg font-semibold underline">
                   GitHub
