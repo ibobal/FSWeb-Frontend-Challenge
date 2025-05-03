@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
-import settingsReducer from "./reducers/settingsSlice";
-import dataReducer from "./reducers/dataSlice";
+import settingsReducer from "../features/settings/settingsSlice";
+import dataReducer from "../features/data/dataSlice";
 
 const store = configureStore({
   reducer: {

@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
-import { setTheme, setLanguage } from "../store/reducers/settingsSlice";
+import { setTheme, setLanguage } from "../features/settings/settingsSlice";
 import { useEffect } from "react";
-import { fetchContentData } from "../store/reducers/dataSlice";
+import { fetchContentData } from "../features/data/dataSlice";
 import { toast } from "react-toastify";
 
 export default function Header() {
