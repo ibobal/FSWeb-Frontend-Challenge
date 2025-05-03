@@ -3,7 +3,7 @@ import { FaCodepen, FaInstagram } from "react-icons/fa";
 import { FiTwitter, FiAtSign } from "react-icons/fi";
 
 export default function Footer() {
-  const { data, loading, error } = useSelector((state) => state.data);
+  const { data } = useSelector((state) => state.data);
   const { title, desc, email } = data.footerSection;
 
   return (
