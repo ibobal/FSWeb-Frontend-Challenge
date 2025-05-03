@@ -5,6 +5,7 @@ import axios from "axios";
 export const fetchContentData = createAsyncThunk(
   "fetchContentData",
   async (language, thunkAPI) => {
+    await new Promise((resolve) => setTimeout(resolve, 1000));
     const response = await axios.post(
       "https://reqres.in/api/workintech",
       data[language],
