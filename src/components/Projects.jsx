@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 
 export default function Projects() {
-  const { data, loading, error } = useSelector((state) => state.data);
+  const { data } = useSelector((state) => state.data);
   const { title, projects } = data.projectsSection;
 
   return (
