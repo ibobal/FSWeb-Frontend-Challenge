@@ -1,3 +1,4 @@
+import { ToastContainer } from "react-toastify";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -8,6 +9,7 @@ import Skills from "./components/Skills";
 function App() {
   return (
     <div className="App">
+      <ToastContainer position="bottom-right"/>
       <Header />
       <Hero />
       <Skills />
