@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 
 export default function Profile() {
-  const { data, loading, error } = useSelector((state) => state.data);
+  const { data } = useSelector((state) => state.data);
   const { title, image, infoSection, aboutMeSection } = data.profileSection;
 
   return (
